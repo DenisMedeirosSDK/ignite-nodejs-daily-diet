@@ -1,0 +1,42 @@
+{
+  "name": "ignite-nodejs-daily-diet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisMedeirosSDK/ignite-nodejs-daily-diet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisMedeirosSDK/ignite-nodejs-daily-diet/issues"
+  },
+  "homepage": "https://github.com/DenisMedeirosSDK/ignite-nodejs-daily-diet#readme",
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/jwt": "^6.7.1",
+    "@prisma/client": "^4.13.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/node": "^18.15.11",
+    "eslint": "^8.38.0",
+    "prisma": "^4.13.0",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4"
+  }
+}
