@@ -16,7 +16,23 @@ model User {
   email         String   @unique
   password_hash String
   created_at    DateTime @default(now())
+  Snack         Snack[]
 
   @@index([id])
   @@map("users")
+}
+
+model Snack {
+  id                String   @id @default(uuid())
+  name              String
+  description       String
+  isDiet            Boolean
+  when_was_the_meal DateTime
+  created_at        DateTime @default(now())
+  updated_at        DateTime @updatedAt
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@map("snack")
 }

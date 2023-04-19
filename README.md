@@ -1,6 +1,5 @@
 # ignite-nodejs-daily-diet
 
-
 ## Sobre o desafio
 
 ⚠️ A partir desse desafio **não** vamos informar detalhadamente rotas e propriedades dos registros a serem criadas, mas sim, as regras e requisitos que a API deve ter.
